@@ -1,0 +1,22 @@
+{
+    "name": "zbin95/chuanglan-shanyan",
+    "description": "Chuanglan Shanyan SDK",
+    "authors": [
+        {
+            "name": "zbin95",
+            "email": "455307132@qq.com"
+        }
+    ],
+    "require": {
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^6.1"
+    },
+    "autoload": {
+        "files": [
+            "src/Support/helpers.php"
+        ],
+        "psr-4": {
+            "Chuanglan\\Shanyan\\" : "src/"
+        }
+    }
+}
