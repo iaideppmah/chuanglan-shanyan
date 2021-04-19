@@ -175,7 +175,7 @@ class ShanyanService
         }
 
         if ($responseArray["code"] != '200000') {
-            throw new ServerErrorException(array_get(self::RESPONSE_PHRASES, $responseArray['code'],
+            throw new ServerErrorException(arr_get(self::RESPONSE_PHRASES, $responseArray['code'],
                 sprintf('服务异常(%s)', $responseArray['code'])));
         }
 
@@ -183,8 +183,8 @@ class ShanyanService
 
     // build the request param for query mobile
     private function buildRequestForQueryMobile($token, $param){
-        $outId = array_get($param, "out_id", "");
-        $clientIp = array_get($param, "client_ip", "");
+        $outId = arr_get($param, "out_id", "");
+        $clientIp = arr_get($param, "client_ip", "");
 
         $data = [
             "appId" => $this->appid,

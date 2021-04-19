@@ -1,5 +1,5 @@
 <?php
-if (!function_exists('array_get')) {
+if (!function_exists('arr_get')) {
     /**
      * Get an item from an array using "dot" notation.
      *
@@ -8,7 +8,7 @@ if (!function_exists('array_get')) {
      * @param  mixed   $default
      * @return mixed
      */
-    function array_get($array, $key, $default = null)
+    function arr_get($array, $key, $default = null)
     {
         if (is_null($key)) {
             return $array;
